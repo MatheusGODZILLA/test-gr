@@ -383,44 +383,86 @@ audio {
     }
 }
 
-@media (max-width: 768px) {
-    /* Previous media queries ... */
-
-    /* Adjust game board and its components for smaller screens */
+@media (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    
+    header {
+        padding: 0.5rem; /* Reduce header padding */
+    }
+    
+    header img {
+        width: 120px; /* Reduce logo size further */
+    }
+    
+    nav a {
+        font-size: 0.8rem; /* Decrease font size for navigation links */
+        padding: 0.4rem 0.6rem; /* Adjust padding for navigation links */
+    }
+    
     .game-board {
-        height: auto; /* Allow the game board to expand vertically */
-        background-size: cover; /* Adjust background image sizing */
+        height: 250px; /* Reduce the height of the game board */
     }
-
-    .button-container {
-        height: auto; /* Allow button container to expand vertically */
-    }
-
+    
     .perdeu {
         width: 100%; /* Adjust width for full width on small screens */
+        margin: 3px; /* Adjust margin for smaller screens */
     }
-
-    .begin,
-    .button-container {
-        justify-content: flex-start; /* Align content at the top */
+    
+    .restart-button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
     }
-
-    .score-board {
-        position: static; /* Remove absolute positioning */
-        margin-top: 0.5rem; /* Adjust margin for scores */
-    }
-
+    
     .score,
     .highscore {
-        display: inline-block; /* Display scores inline */
-        font-size: 1rem; /* Adjust font size */
-        padding: 0.25rem 0.5rem; /* Adjust padding */
-        margin-right: 0.5rem; /* Add margin between scores */
+        font-size: 0.9rem; /* Decrease font size for scores */
+        padding: 0.2rem 0.4rem; /* Adjust padding for scores */
     }
-
+    
     .icon {
-        display: inline-block; /* Display icon inline */
-        width: 40px; /* Reduce icon size */
+        width: 50px; /* Reduce icon size further */
         margin-left: 5px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-height: 500px) {
+    /* Further adjustments for shorter screens */
+    
+    header {
+        padding: 0.3rem; /* Reduce header padding */
+    }
+    
+    header img {
+        width: 100px; /* Reduce logo size */
+    }
+    
+    nav a {
+        font-size: 0.7rem; /* Decrease font size for navigation links */
+        padding: 0.3rem 0.5rem; /* Adjust padding for navigation links */
+    }
+    
+    .game-board {
+        height: 200px; /* Reduce the height of the game board */
+    }
+    
+    .perdeu {
+        width: 100%; /* Adjust width for full width on small screens */
+        margin: 2px; /* Adjust margin for smaller screens */
+    }
+    
+    .restart-button {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .score,
+    .highscore {
+        font-size: 0.8rem; /* Decrease font size for scores */
+        padding: 0.15rem 0.3rem; /* Adjust padding for scores */
+    }
+    
+    .icon {
+        width: 40px; /* Reduce icon size further */
+        margin-left: 4px; /* Adjust margin for smaller screens */
     }
 }
